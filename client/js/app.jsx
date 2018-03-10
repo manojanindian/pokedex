@@ -16,6 +16,7 @@ ReactDOM.render((
 	<Provider store={store}>
 		<Router>
 			<Switch>
+				<Route path="/" exact component={Pokemons} />
 				<Route path="/pokemons" exact component={Pokemons} />
 				<Route path="/pokemons/:offset" exact component={Pokemons} />
 				<Route path="/pokemonInfo/:id" exact component={PokemonDetail} />
